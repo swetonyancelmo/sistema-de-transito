@@ -9,6 +9,7 @@ void registerVehicle();
 void fineVehicle();
 void searchVehicle();
 void pause();
+void registerVehicleDetails();
 
 // Variável globlal que recebe a opção que o usuário vai escolher
 char op;
@@ -66,7 +67,6 @@ void menu(){
   printf("Buscar veiculo (B)\n");
   printf("Encerrar programa (E)\n");
   scanf(" %c", &op);
-  fflush(stdin);
 }
 
 // Função para pausa 'genérica'
@@ -78,8 +78,27 @@ void pause(){
 
 // Função para registrar um veiculo
 void registerVehicle(){
-  printf("Funcao de cadastro de veiculo chamada.\n");
-  pause();
+  printf("           ===CADASTRO DE VEÍCULO===\n\n");
+  printf("Iniciar cadastro ? (S/N)\n");
+  printf("Voltar (V)\n");
+  scanf(" %c", &op);
+  
+  switch(op){
+    case 'S':
+    case 's':
+      registerVehicleDetails();
+      break;
+    case 'N':
+    case 'n':
+      printf("Cadastro cancelado.\n");
+      menu();
+      break;
+    case 'V':
+    case 'v':
+      printf("Voltando ao menu principal...\n");
+      menu();
+      break;
+  }
 }
 
 // Função para multar um veiculo
@@ -91,5 +110,11 @@ void fineVehicle(){
 // Função para buscar um veiculo
 void searchVehicle(){
   printf("Funcao de buscar veiculo chamada.\n");
+  pause();
+}
+
+// Função para registrar um veiculo
+void registerVehicleDetails(){
+  printf("Funcao de registrar veiculo chamada.\n");
   pause();
 }
