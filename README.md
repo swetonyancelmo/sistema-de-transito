@@ -64,5 +64,5 @@ Durante o desenvolvimento deste projeto, aprendi e pratiquei diversos conceitos 
 ### Passos para compilar e executar:
 1. Clone este repositório:
    ```bash
-   git clone 
+   git clone https://github.com/swetonyancelmo/sistema-de-transito.git
    cd sistema-gerenciamento-veiculos
