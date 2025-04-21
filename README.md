@@ -65,4 +65,4 @@ Durante o desenvolvimento deste projeto, aprendi e pratiquei diversos conceitos 
 1. Clone este repositório:
    ```bash
    git clone https://github.com/swetonyancelmo/sistema-de-transito.git
-   cd sistema-gerenciamento-veiculos
+   cd sistema-de-transito
